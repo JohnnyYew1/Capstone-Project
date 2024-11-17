@@ -154,10 +154,10 @@ function updateSeats() {
                         seatSelect.appendChild(option);
                     });
                 } else {
-                    const noSeatsOption = document.createElement('option');
-                    noSeatsOption.value = '';
-                    noSeatsOption.textContent = 'No seats available';
-                    seatSelect.appendChild(noSeatsOption);
+                    $_SESSION['message'] = "Full Booking";
+                    $_SESSION['error'] = true;
+                    header("Location: booking.php");
+                    exit();
                 }
             })
             .catch(error => {
