@@ -1,0 +1,96 @@
+/* 背景图片模糊效果 */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('intiPg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1; /* Ensure it stays behind the content */
+}
+
+/* 居中的表单盒子 */
+.form-box {
+    background: rgba(255, 255, 255, 0.7); /* 设置表单为半透明 */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left; /* 左对齐 */
+}
+
+/* 登录标题 */
+.form-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* 居中的标题 */
+}
+
+/* Input field labels and fields */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* 输入框样式 */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 提交按钮居中 */
+input[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    width: 50%;
+    background-color: #f80606;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #bd0505;
+    transform: scale(1.02);
+}
+
+/* Links: Register and Forgot Password aligned to the right */
+.links {
+    display: flex;
+    justify-content: space-between; /* This aligns the links horizontally */
+    margin-top: 20px;
+}
+
+.links p {
+    margin: 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgb(127, 125, 125); /* red color for links */
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: rgb(105, 105, 105);
+}
+
+/* 错误和成功信息的样式 */
+.error-message,
+.success-message {
+    border-radius: 5px; /* 添加边框半径 */
+}

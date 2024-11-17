@@ -1,0 +1,132 @@
+/* Main layout styling for Route Management */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main container for the routes list */
+#routes-list {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    width: 100%; /* Full width for the container */
+    margin-top: 20px; /* Add spacing above the table */
+    padding: 10px; /* Add padding to prevent content from touching edges */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for a lifted effect */
+}
+
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove gaps between cells */
+    background-color: #fff; /* White background for the table */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the table */
+    table-layout: auto; /* Allows columns to adapt to content */
+}
+
+/* Header row styling */
+table th {
+    background-color: #d50d0d; /* Green background for headers */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold font for headers */
+    padding: 12px; /* Padding within each header cell */
+    text-align: left; /* Left-align text */
+}
+
+/* Table cell styling */
+table td {
+    padding: 12px; /* Padding for cell content */
+    border-top: 1px solid #ddd; /* Light border on top of each row */
+    overflow: hidden; /* Prevents overflow of long text */
+    text-overflow: ellipsis; /* Adds ellipsis for overflowing text */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* Hover effect for rows */
+table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Pick-up points list styling */
+table td ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+table td ul li {
+    margin: 2px 0;
+}
+
+/* Route Management Section Header */
+#routes-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Action buttons */
+.activate-link, .deactivate-link {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.activate-link {
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+}
+
+.activate-link:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+.deactivate-link {
+    color: #ce0c0c;
+    border: 1px solid #ce0c0c;
+}
+
+.deactivate-link:hover {
+    background-color: #ce0c0c;
+    color: white;
+}
+
+/* Floating button */
+.plus-icon {
+    width: 30px;
+    height: 30px;
+    mix-blend-mode: darken;
+}
+
+.float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.float-button:hover {
+    background-color: #45a049;
+}

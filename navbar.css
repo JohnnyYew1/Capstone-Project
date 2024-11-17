@@ -1,0 +1,83 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideDown 1s forwards;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(-10px);
+    position: relative;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fb0000; /* Customize color */
+    transition: width 0.7s;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%; /* Expands underline to full width on hover */
+}
+
+.logo img {
+    height: 50px;
+    vertical-align: middle;
+}

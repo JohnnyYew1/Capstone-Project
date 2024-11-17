@@ -1,0 +1,93 @@
+/* Main layout styling for Booking Management */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff; /* Light background for table */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header styling */
+table thead {
+    background-color: #e63108; /* Changed to a vibrant red-orange */
+    color: white;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect for rows */
+table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Table header fonts */
+table th {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Table cell handling for long text */
+table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* No bookings message styling */
+#booking-list td {
+    text-align: center;
+    font-weight: bold;
+    color: #666;
+}
+
+/* Booking List Section Header */
+#booking-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Floating Button (if needed in future) */
+.plus-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.float-button:hover {
+    background-color: #45a049;
+}

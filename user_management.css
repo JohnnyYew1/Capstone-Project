@@ -1,0 +1,170 @@
+/* Main layout styling */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Tab styles */
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    justify-content: flex-start;
+}
+
+.tab {
+    margin-right: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.tab a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.tab:hover {
+    background-color: #f1f1f1;
+}
+
+.tab.active {
+    background-color: #bcbcbc;
+    color: white;
+    border-bottom: 2px solid #747474;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+    background-color: red; /* Changed to red */
+    color: white;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+table th {
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+/* Action buttons */
+button, .activate-link, .deactivate-link {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.activate-link {
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+    text-decoration: none; /* Removed underline */
+}
+
+.activate-link:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+.deactivate-link {
+    color: #ce0c0c;
+    border: 1px solid #ce0c0c;
+    text-decoration: none; /* Removed underline */
+}
+
+.deactivate-link:hover {
+    background-color: #ce0c0c;
+    color: white;
+}
+
+/* Floating button */
+.plus-icon {
+    width: 30px;
+    height: 30px;
+    mix-blend-mode:darken;
+}
+
+.float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.float-button:hover {
+    background-color: #45a049;
+}
+
+/* Status indicators */
+.status-active {
+    background-color: #e8f5e9;
+    color: #4CAF50;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.status-inactive {
+    background-color: #ffebee;
+    color: #ff4d4d;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}

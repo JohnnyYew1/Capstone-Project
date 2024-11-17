@@ -1,0 +1,186 @@
+/* Main layout styling */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Ensure the table takes full width of its container */
+    max-width: 1200px; /* Optional: Set a maximum width for larger displays */
+    border-collapse: collapse; /* Maintain clean borders */
+    margin-top: 20px; /* Space above the table */
+}
+table tbody{
+    background-color:white ;
+}
+table thead {
+    background-color: #e61515;
+    color: white;
+}
+
+table th, table td {
+    padding: 15px 20px; /* Increase padding for better spacing */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Maintain separation between rows */
+}
+
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table th {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+table td {
+    overflow: hidden; /* Hides overflow content */
+    text-overflow: ellipsis; /* Adds ellipsis for overflowing text */
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+}
+
+/* Action links */
+.deactivate-link {
+    color: #ce0c0c; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    padding: 10px 15px; /* Increase padding for better click area */
+    border: 1px solid #ce0c0c; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.deactivate-link:hover {
+    background-color: #ce0c0c; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.activate-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.activate-link:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+.delete-link {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.delete-link:hover {
+    background-color: #ff8787;
+    color: white;
+}
+
+.no-announcements {
+    color: #777;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Floating button */
+.plus-icon {
+    width: 30px;
+    height: 30px;
+    mix-blend-mode:darken;
+}
+
+.float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.float-button:hover {
+    background-color: #45a049;
+}
+
+.status-active {
+    background-color: #e8f5e9;
+    color: #4CAF50;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.status-inactive {
+    background-color: #ffebee;
+    color: #ff4d4d;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+.button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.error-message,
+.success-message {
+    border-radius: 5px;
+}
+
+.error-message {
+    color: #ff4d4d;
+    background-color: #ffe6e6;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-left: 5px solid #ff0000;
+    border-radius: 5px;
+}
+
+.success-message {
+    color: #4CAF50;
+    background-color: #e7f4e4;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-left: 5px solid #4CAF50;
+}
+
+/* Increase the size of the textarea for the message content */
+textarea[name="message"] {
+    width: 100%; /* Full width of the container */
+    height: 200px; /* Adjust height to your preference */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: vertical; /* Allows users to resize vertically if needed */
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+}

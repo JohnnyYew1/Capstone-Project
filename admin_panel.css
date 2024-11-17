@@ -1,0 +1,225 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light grey for modern, clean look */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+   
+}
+
+h1 {
+    color: #333;
+    font-size: 3rem;
+    margin: 20px 0;
+    text-align: center;
+   
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* User Booking Box (Left Section) */
+.user-booking-box {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.user-booking-box h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user-booking-box form {
+    display: flex;
+    align-items: center;
+}
+
+.user-booking-box input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.user-booking-box button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.user-booking-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Booking Counts Section */
+.booking-counts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.count-box {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center;    /* Center aligns both count and label */
+    justify-content: center; /* Centers content vertically */
+    text-align: center;
+    width: 120px;
+    height: 100px; /* Increased height to accommodate label */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensures proper stacking context */
+    overflow: visible;  /* Prevents clipping of content */
+}
+
+.count-box p {
+    margin: 5px 0 0; /* Adds space between the count and label */
+    font-size: 14px; /* Label text size */
+    color: #333;
+    position: relative; /* Keeps label within its parent */
+    z-index: 1; /* Ensures label is visible */
+}
+
+.count-box span {
+    font-size: 24px; /* Make the count number prominent */
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px; /* Adds space below the count */
+    z-index: 1; /* Ensures the count is on top */
+}
+
+/* Navigation Arrows */
+.arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 105px;
+}
+
+.arrows button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.arrows button:hover {
+    background-color: #0056b3;
+}
+
+/* Overview Section (Right Section) */
+.overview {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.overview h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Overview Item Styling */
+.overview-item {
+    background-color: rgba(255,255,255,0.6);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.overview-item h3 {
+    color: #007bff;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.status-indicator.active {
+    background-color: #28a745;
+}
+
+.status-indicator.inactive {
+    background-color: #dc3545;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
